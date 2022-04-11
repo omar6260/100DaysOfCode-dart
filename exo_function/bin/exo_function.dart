@@ -37,8 +37,17 @@
 // String compliment(int number) {
 //   return '$number is a very nice number';
 // }
+// void main() {
+//   const list = [5, 4, 3, 2, 1];
+//   final value = list.map((number) => number * 5);
+//   print('new values are: ${value}');
+// }
+
 void main() {
-  const list = [5, 4, 3, 2, 1];
-  final value = list.map((number) => number * 5);
-  print('new values are: ${value}');
+  final getMultiple = getSommeNumber(2);
+  print("GetMultiple = $getMultiple");
+}
+
+num getSommeNumber(int number) {
+  return number * 5;
 }
