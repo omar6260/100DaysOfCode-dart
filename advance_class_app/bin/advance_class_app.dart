@@ -74,3 +74,12 @@ class Famille {
     print('Enfant');
   }
 }
+
+class Person2 {
+  int? id;
+  String? name;
+
+  void moussa() {
+    print('cool');
+  }
+}
