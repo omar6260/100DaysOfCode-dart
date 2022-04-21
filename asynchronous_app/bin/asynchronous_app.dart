@@ -1,7 +1,6 @@
 import 'dart:io' show exit;
 
 // Future<void> fetchFlutterHope() {
-
 //   return Future.delayed(
 //       const Duration(seconds: 5), () => print("Hello Flutter Lovers"));
 // }
@@ -12,20 +11,21 @@ import 'dart:io' show exit;
 //   print("Hii");
 // }
 
-// Future<String> fetchUserOrder() => Future.delayed(
-//       const Duration(seconds: 2),
-//       () => 'Hello Oumar',
-//     );
+Future<String> fetchUserOrder() => Future.delayed(
+      const Duration(seconds: 2),
+      () => 'Hello Oumar',
+    );
 
-// Future<void> fetchFlutterHope() async {
-//   var order = await fetchUserOrder();
-//   print("Welcome");
-// }
+Future<void> fetchFlutterHope() async {
+  var order = await fetchUserOrder();
+  print("Welcome");
+}
 
-// void main() {
-//   print("Hello ");
-//   fetchFlutterHope();
-// }
+void main() async {
+  print("Hello ");
+  await fetchFlutterHope();
+  print('bonsoir');
+}
 
 // final myFuture = Future<int>.delayed(
 //   Duration(seconds: 1),
