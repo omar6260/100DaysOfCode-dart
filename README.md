@@ -16,6 +16,8 @@ The problem is not assigning a variable to null but using it when it contains no
 Null Safety divides variables into two categories: non-nullable and nullable. By default, variables are non-nullable.
 Forgetting to initialize one or assigning null to a method, leads to a compilation error.
 ![NULL](https://user-images.githubusercontent.com/82382673/164917589-9bad22c3-355e-4d0a-a3f3-9b6f885e412f.PNG)
+
+
 For example here, the compiler will not let us pass null to the method suisJeMajeur because the parameter is not nullable.
 
 ###The nullable (?) operator
