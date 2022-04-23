@@ -1,5 +1,5 @@
 # 100DaysOfCode-dart
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 ## INTRODUCTION
 
 Recently, Dart 2.12 was delivered in Flutter 2. This update contains one of the most important features of the language
@@ -23,6 +23,6 @@ Forgetting to initialize one or assigning null to a method, leads to a compilati
 
 For example here, the compiler will not let us pass null to the method suisJeMajeur because the parameter is not nullable.
 
-##The nullable (?) operator
+The nullable (?) operator
 
 And even if we made the parameter nullable (or optional), by adding the question mark to the type, we would still have a compiler error because we cannot compare a null value with a real value (here an integer):
