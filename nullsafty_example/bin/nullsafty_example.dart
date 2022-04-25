@@ -29,3 +29,29 @@ bool jeSuisMajeur(int? age) {
 void main() {
   jeSuisMajeur(29);
 }
+
+/* Une manière de faire, serait d’utiliser l’opérateur ??.
+Voici un exemple :
+*/
+
+bool suisJeMajeur(int? age) {
+  int ageVerifie = age ?? 0;
+  return ageVerifie >= 18;
+}
+
+// void main() {
+//   suisJeMajeur(29);
+// }
+
+/* Dans cet exemple, nous utilisons l’opérateur ?? pour dire au compilateur: « Assigne à ageVerifie la valeur
+ contenue dans la variable age si elle existe, sinon 0« . De cette manière, nous sommes certains que notre condition sera exécuté quoiqu’il arrive.
+Le mot clé required
+Le fait d’avoir un paramètre nommé (voir ci-dessous) nous oblige à préciser si le paramètre est optionnel ou non.*/
+
+// bool jeSuisMajeur({int age}) {
+//   return age >= 18;
+// }
+
+// void main() {
+//   jeSuisMajeur(age: 29);
+// }
