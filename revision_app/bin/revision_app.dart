@@ -13,5 +13,5 @@
 
 void main() {
   String korite = "EID MUBARAK";
-  print("$korite DEWENATY DI BALOU NIEUP AKK");
+  print("$korite BALL");
 }
