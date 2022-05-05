@@ -21,17 +21,24 @@
 //   return !anInteger.isNegative;
 // }
 
-void main() {
-  print(TextWidget());
-}
+// void main() {
+//   print(TextWidget());
+// }
 
-class TextWidget {
-  String? text;
-  bool isLong() {
-    final text = this.text; // shadowing
-    if (text == null) {
-      return false;
-    }
-    return text.length > 100;
+// class TextWidget {
+//   String? text;
+//   bool isLong() {
+//     final text = this.text; // shadowing
+//     if (text == null) {
+//       return false;
+//     }
+//     return text.length > 100;
+//   }
+// }
+String name = "Oumar";
+
+void main() {
+  if (name != null) {
+    print(name);
   }
 }

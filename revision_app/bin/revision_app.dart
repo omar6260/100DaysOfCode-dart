@@ -11,7 +11,12 @@
 //   print("je me nomme $name, j'ai $age et ma taile et de $taile");
 // }
 
+// void main() {
+//   String korite = "EID MUBARAK";
+//   print("$korite BALL");
+// }
+
 void main() {
-  String korite = "EID MUBARAK";
-  print("$korite BALL");
+  final name = "Oumar";
+  name = ""
 }
