@@ -35,7 +35,7 @@
 //     return text.length > 100;
 //   }
 // }
-String name = "Oumar";
+String? name = "Oumar";
 
 void main() {
   if (name != null) {

@@ -16,7 +16,4 @@
 //   print("$korite BALL");
 // }
 
-void main() {
-  final name = "Oumar";
-  name = ""
-}
+

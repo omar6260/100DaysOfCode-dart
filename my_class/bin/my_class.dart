@@ -49,11 +49,22 @@
 //   }
 // }
 
-void main() {
-  getInfo("Oumar", 771508362);
+// void main() {
+//   getInfo("Oumar", 771508362);
+// }
+
+// void getInfo(String name, int num) {
+//   print(name.toUpperCase());
+//   print(num.isEven);
+// }
+
+class Person {
+  var name = "Oumar";
+  String sayHello(String name) {
+    return "Hello $name";
+  }
 }
 
-void getInfo(String name, int num) {
-  print(name.toUpperCase());
-  print(num.isEven);
+void main() {
+  Person();
 }
