@@ -98,27 +98,59 @@
 //   var s = 'Hello $name';
 //   print(s);
 // }
-String concat(String s1, String s2, [String? s3]) {
-  if (s3 != null) {
-    return s1 + s2 + s3;
-  }
-  return s1 + s2;
-}
+// String concat(String s1, String s2, [String? s3]) {
+//   if (s3 != null) {
+//     return s1 + s2 + s3;
+//   }
+//   return s1 + s2;
+// }
 
-double sum(double v1, double v2, [double? v3, double? v4]) {
-  return v1 + v2 + (v3 ?? 0) + (v4 ?? 0);
+// double sum(double v1, double v2, [double? v3, double? v4]) {
+//   return v1 + v2 + (v3 ?? 0) + (v4 ?? 0);
+// }
+
+// void main() {
+//   String result1 = concat('One', 'Two');
+//   print('result $result1');
+//   String result2 = concat('One', 'Two', 'three');
+//   print('result: $result2');
+
+//   double val1 = sum(1, 2, 3, 4);
+//   print('value1: $val1');
+//   double val2 = sum(1, 2, 3);
+//   print('value: $val2');
+//   double val3 = sum(1, 2);
+//   print('value: $val3');
+
+// }
+
+/* The thing is, not everyone has a title, or wants to use their
+title, so your function needs to treat the title as optional. To
+indicate that a parameter is optional, you surround the
+parameter with square brackets and add a question mark
+after the type, like so: */
+
+String fullName(String first, String last, [String? title]) {
+  if (title != null) {
+    return '$title $first $last';
+  } else {
+    return '$first $last';
+  }
 }
 
 void main() {
-  String result1 = concat('One', 'Two');
-  print('result $result1');
-  String result2 = concat('One', 'Two', 'three');
-  print('result: $result2');
-
-  double val1 = sum(1, 2, 3, 4);
-  print('value1: $val1');
-  double val2 = sum(1, 2, 3);
-  print('value: $val2');
-  double val3 = sum(1, 2);
-  print('value: $val3');
+  print(fullName('Omar', 'Fall'));
+  print(fullName('Omar', 'Fall', 'Prof'));
 }
+// String fullName(String first, String last, [String? title]) {
+//   if (title != null) {
+//     return '$title $first $last';
+//   } else {
+//     return '$first $last';
+//   }
+// }
+
+// void main() {
+//   print(fullName('Omar', 'Fall'));
+//   print(fullName('Omar', 'Fall', 'Prof'));
+// }
