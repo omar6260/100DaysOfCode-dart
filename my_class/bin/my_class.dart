@@ -130,17 +130,18 @@ indicate that a parameter is optional, you surround the
 parameter with square brackets and add a question mark
 after the type, like so: */
 
-String fullName(String first, String last, [String? title]) {
-  if (title != null) {
-    return '$title $first $last';
-  } else {
-    return '$first $last';
-  }
-}
+// String fullName(String first, String last, [String? title]) {
+//   if (title != null) {
+//     return '$title $first $last';
+//   } else {
+//     return '$first $last';
+//   }
+// }
 
 void main() {
-  print(fullName('Omar', 'Fall'));
-  print(fullName('Omar', 'Fall', 'Prof'));
+  // print(fullName('Omar', 'Fall'));
+  // print(fullName('Omar', 'Fall', 'Prof'));
+   
 }
 // String fullName(String first, String last, [String? title]) {
 //   if (title != null) {
