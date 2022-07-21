@@ -1,5 +1,5 @@
 // ignore_for_file: unnecessary_this
-
+// POO methode
 class Rectangle {
   int? longueur;
   int? largeur;
